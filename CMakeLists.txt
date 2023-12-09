@@ -435,8 +435,8 @@ endif()
 
 # internal settings; these may change in a future versions
 set(UPX_CONFIG_DISABLE_THREADS ON) # multithreading is currently not used; maybe in UPX version 5
-set(UPX_CONFIG_DISABLE_BZIP2 ON)   # bzip2 is currently not used; we might need it to decompress linux kernels
-set(UPX_CONFIG_DISABLE_ZSTD ON)    # zstd is currently not used; maybe in UPX version 5
+set(UPX_CONFIG_DISABLE_BZIP2 OFF)  # bzip2 is currently not used; we might need it to decompress linux kernels
+set(UPX_CONFIG_DISABLE_ZSTD OFF)   # zstd is currently not used; maybe in UPX version 5
 
 upx_cmake_include_hook(4_targets)
 
